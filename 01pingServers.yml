@@ -1,11 +1,6 @@
 ---
+
 - hosts: all
-  gather_facts: no
-  remote_user: ansible
+  gather_facts: false
   tasks:
-    - name: Test connection
-      ping:
-      remote_user: ansible
-...
-
-
+    - ping:
